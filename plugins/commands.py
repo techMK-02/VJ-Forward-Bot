@@ -23,8 +23,8 @@ START_TIME = time.time()
 main_buttons = [[
     InlineKeyboardButton('🔰  ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ  🔰', url='https://t.me/WabXUpdates')
 ],[
-    InlineKeyboardButton('💬 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/vj_bot_disscussion'),
-    InlineKeyboardButton('ᴅᴇᴠᴇʟᴏᴘᴇʀ 😇', url='https://t.me/vj_botz')
+    InlineKeyboardButton('💬 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/WabX_Support'),
+    InlineKeyboardButton('ᴅᴇᴠᴇʟᴏᴘᴇʀ 😇', url='https://t.me/MrThanos02')
 ],[
     InlineKeyboardButton('👨‍💻 ʜᴇʟᴘ', callback_data='help'),
     InlineKeyboardButton('sᴇᴛᴛɪɴɢs ⚙', callback_data='settings#main')
@@ -70,8 +70,6 @@ async def helpcb(bot, query):
     ],[
         InlineKeyboardButton('⪻ ʙᴀᴄᴋ', callback_data='back'),
         InlineKeyboardButton('⚙ Sᴇᴛᴛɪɴɢs', callback_data='settings#main')
-    ],[
-        InlineKeyboardButton('• back', callback_data='back')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await query.message.edit_text(text=Script.HELP_TXT, reply_markup=reply_markup)
@@ -108,7 +106,7 @@ async def back(bot, query):
 @Client.on_callback_query(filters.regex(r'^about'))
 async def about(bot, query):
     buttons = [[
-         InlineKeyboardButton('• back', callback_data='help'),
+         InlineKeyboardButton('⪻ ʙᴀᴄᴋ', callback_data='help'),
          InlineKeyboardButton('Stats ✨️', callback_data='status')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -128,7 +126,7 @@ async def status(bot, query):
     forwardings = await db.forwad_count()
     upt = await get_bot_uptime(START_TIME)
     buttons = [[
-        InlineKeyboardButton('• back', callback_data='help'),
+        InlineKeyboardButton('⪻ ʙᴀᴄᴋ', callback_data='help'),
         InlineKeyboardButton('System Stats ✨️', callback_data='systm_sts'),
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
