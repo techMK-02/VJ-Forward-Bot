@@ -21,10 +21,10 @@ START_TIME = time.time()
 # Ask Doubt on telegram @KingVJ01
 
 main_buttons = [[
-    InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 👾 ', url='https://t.me/icrunchbots')
+    InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 👾 ', url='https://t.me/WabXUpdates')
 ],[
-    InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/icrunch_support'),
-    InlineKeyboardButton('ᴅᴇᴠᴇʟᴏᴘᴇʀ 🍁', url='https://t.me/vj_botz')
+    InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/WabXSupport'),
+    InlineKeyboardButton('ᴅᴇᴠᴇʟᴏᴘᴇʀ 🍁', url='https://t.me/FilmyWabX')
 ],[
     InlineKeyboardButton('👨‍💻 ʜᴇʟᴘ', callback_data='help'),
     InlineKeyboardButton('💁 ᴀʙᴏᴜᴛ', callback_data='about')
@@ -109,7 +109,7 @@ async def back(bot, query):
 async def about(bot, query):
     buttons = [[
          InlineKeyboardButton('• back', callback_data='start'),
-         InlineKeyboardButton('ᴅᴇᴠᴇʟᴏᴘᴇʀ☎️', url='https://t me/icrunchbot')
+         InlineKeyboardButton('ᴅᴇᴠᴇʟᴏᴘᴇʀ☎️', url='https://t me/FilmyWabX')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await query.message.edit_text(
