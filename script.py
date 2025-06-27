@@ -35,7 +35,7 @@ class  Script(object):
   
   ABOUT_TXT = """<b>
 <blockquote>Fᴏʀ Aɴʏ Fᴜʀᴛʜᴇʀ Iɴғᴏʀᴍᴀᴛɪᴏɴ 
-Cᴏɴᴛᴀᴄᴛ Uꜱ <a href="https://t.me/MrThanos02">F𝖎𝖑𝖒ʏ D𝖊𝖛𝖊𝖑𝖔𝖕𝖊𝖗</a></blockquote></b>"""
+Cᴏɴᴛᴀᴄᴛ Uꜱ <a href="https://t.me/wabxbots">F𝖎𝖑𝖒ʏ D𝖊𝖛𝖊𝖑𝖔𝖕𝖊𝖗</a></blockquote></b>"""
   STATUS_TXT = """
 ╔════❰ ʙᴏᴛ sᴛᴀᴛᴜs  ❱═❍⊱❁۪۪
 ║╭━━━━━━━━━━━━━━━➣
