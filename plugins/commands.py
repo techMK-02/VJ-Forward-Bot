@@ -106,8 +106,8 @@ async def back(bot, query):
 @Client.on_callback_query(filters.regex(r'^about'))
 async def about(bot, query):
     buttons = [[
-         InlineKeyboardButton('⪻ ʙᴀᴄᴋ', callback_data='back'),
-         InlineKeyboardButton('Stats 📈', callback_data='status')
+         InlineKeyboardButton('⪻ ʙᴀᴄᴋ', callback_data='help'),
+         InlineKeyboardButton('Stats ✨️', callback_data='status')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await query.message.edit_text(
@@ -126,8 +126,8 @@ async def status(bot, query):
     forwardings = await db.forwad_count()
     upt = await get_bot_uptime(START_TIME)
     buttons = [[
-        InlineKeyboardButton('⪻ ʙᴀᴄᴋ', callback_data='about'),
-        InlineKeyboardButton('System Stats 📊', callback_data='systm_sts'),
+        InlineKeyboardButton('⪻ ʙᴀᴄᴋ', callback_data='help'),
+        InlineKeyboardButton('System Stats ✨️', callback_data='systm_sts'),
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await query.message.edit_text(
