@@ -174,7 +174,7 @@ async def pub_(bot, message):
             temp.IS_FRWD_CHAT.remove(sts.TO)
             return await stop(client, user)
         temp.IS_FRWD_CHAT.remove(sts.TO)
-        await send(client, user, "<b>🎉 ғᴏʀᴡᴀᴅɪɴɢ ᴄᴏᴍᴘʟᴇᴛᴇᴅ\nJoin Us @icrunchBots</b>")
+        await send(client, user, "<b>🎉 ғᴏʀᴡᴀᴅɪɴɢ ᴄᴏᴍᴘʟᴇᴛᴇᴅ\nJoin Us @WabXBots</b>")
         await edit(user, m, 'ᴄᴏᴍᴘʟᴇᴛᴇᴅ', "completed", sts) 
         if user_have_db:
             await user_db.drop_all()
@@ -635,7 +635,7 @@ async def restart_pending_forwads(bot, user):
             temp.IS_FRWD_CHAT.remove(sts.TO)
             return await stop(client, user)
         temp.IS_FRWD_CHAT.remove(sts.TO)
-        await send(client, user, "<b>🎉 ғᴏʀᴡᴀᴅɪɴɢ ᴄᴏᴍᴘʟᴇᴛᴇᴅ\n bro us kar liya thanks to bol de @icrunchbot</b>")
+        await send(client, user, "<b>🎉 ғᴏʀᴡᴀᴅɪɴɢ ᴄᴏᴍᴘʟᴇᴛᴇᴅ\n bro us kar liya thanks to bol de @FilmyWabX</b>")
         if user_have_db:
             await user_db.drop_all()
             await user_db.close()
